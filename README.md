@@ -1,4 +1,4 @@
-# 🍺 _Tawnee's Tap House 2.0_
+# ⚛️🍺 _Tawnee's Tap House 2.0_
 
 #### _React with Redux Solo Project for Epicodus_
 #### _DATE 02.19.2021_
@@ -25,6 +25,10 @@ Setup Instructions
 * Next, `npm start`
 * View the page in the live server that opens
 
+## Jest
+
+All actions and reducers have been tested. To run the tests, type `npm test` into the terminal. 
+
 ## 🌳 React Component Tree
 
 <img style="width: 30% height: 30%" src="./read-me-assets/TapHouseTree.png">
@@ -43,6 +47,7 @@ Please feel free to reach out to me anytime at <tawneeh@icloud.com>
 * Redux
 * JavaScript
 * JSX
+* Jest Testing
 * Webpack
 * Babel
 * Eslint
