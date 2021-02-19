@@ -37,7 +37,7 @@ class KegControl extends React.Component {
       if (selectedKeg.pintsLeft === 0) {
         return;
       } else {
-        const newKegList = (this.state.masterKegList[selectedKeg.id])
+        const newKegList = Object.values(this.props.masterKegList[selectedKeg.id])
           .concat(newQuantity);
         this.setState({
           masterKegList: newKegList,
