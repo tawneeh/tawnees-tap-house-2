@@ -39,9 +39,8 @@ class KegControl extends React.Component {
       if (selectedKeg.pintsLeft === 0) {
         return;
       } else {
-        const newKegList = this.state.masterKegList
-          .filter(keg => keg.id !== this.state.selectedKeg.id)
-          .concat(newQuantity);
+        const newKegList = this.props.masterKegList[selectedKeg.id]
+          .concat(newQuantity); // concat will not work on Object! try spread ... or Object.assign() ?
         this.setState({
           masterKegList: newKegList,
           selectedKeg: newQuantity
@@ -50,7 +49,7 @@ class KegControl extends React.Component {
   }
 
   handleChangingSelectedKeg = (id) => {
-    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    const selectedKeg = this.props.masterKegList[id];
     this.setState({selectedKeg: selectedKeg});
   }
 
@@ -71,7 +70,7 @@ class KegControl extends React.Component {
       currentVisibleState = <NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />
       buttonText = "Return to the Keg List";
     } else {
-      currentVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg} />;
+      currentVisibleState = <KegList kegList={this.props.masterKegList} onKegSelection={this.handleChangingSelectedKeg} />;
       buttonText = "Add a Keg";
     }
     return (
