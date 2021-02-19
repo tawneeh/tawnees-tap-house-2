@@ -9,7 +9,7 @@
 
 This application will allow a user to keep track of the kegs in their tap house using React and Redux. New kegs can be added with the number of pints left tracked. Keg details will also be available.
 
-## ⚙️ Setup/Installation Requirements
+## ⚙️ Setup/Installation Requirements 
 
 Software Requirements
 * An internet browser of your choice; I prefer Chrome
@@ -25,9 +25,13 @@ Setup Instructions
 * Next, `npm start`
 * View the page in the live server that opens
 
-## Jest
+## ✔️ Jest Testing
 
-All actions and reducers have been tested. To run the tests, type `npm test` into the terminal. 
+Actions and reducers have been tested. To run the tests, type `npm test` into the terminal. If `No tests found` is stated in the terminal, please press `a` to run all tests.
+
+* Test Suites: 4
+* Tests: 11
+* All tests passing
 
 ## 🌳 React Component Tree
 
