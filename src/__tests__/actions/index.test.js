@@ -11,7 +11,7 @@ describe('tap house actions', () => {
 
   it('addKeg should create ADD_KEG action', () => {
     expect(actions.addKeg({name: '10 Below', brand: 'Scuttlebutt Brewing', price: '5', alcoholContent: '7', pintsLeft: '124', id: 1})).toEqual({
-    type: c.AFF_KEG,
+    type: c.ADD_KEG,
     name: '10 Below',
     brand: 'Scuttlebutt Brewing',
     price: '5',
