@@ -30,7 +30,7 @@ Setup Instructions
 Actions and reducers have been tested. To run the tests, type `npm test` into the terminal. If `No tests found` is stated in the terminal, please press `a` to run all tests.
 
 * Test Suites: 4
-* Tests: 11
+* Tests: 13
 * All tests passing
 
 ## 🌳 React Component Tree
