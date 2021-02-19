@@ -7,7 +7,7 @@
 
 ## 📋 Description
 
-This application will allow a user to keep track of the kegs in their tap house. New kegs can be added with the number of pints left tracked. Keg details will also be available.
+This application will allow a user to keep track of the kegs in their tap house using React and Redux. New kegs can be added with the number of pints left tracked. Keg details will also be available.
 
 ## ⚙️ Setup/Installation Requirements
 
@@ -31,7 +31,7 @@ Setup Instructions
 
 ## 🐜 Known Bugs
 
-This application has no known bugs. 
+This application does not save the new Pint quantity to the Master Keg List. 
 
 ## ☎️ Support and Contact Details
 
@@ -47,8 +47,6 @@ Please feel free to reach out to me anytime at <tawneeh@icloud.com>
 * Babel
 * Eslint
 * Created using `create-react-app`
-
-
 
 ### License
 
