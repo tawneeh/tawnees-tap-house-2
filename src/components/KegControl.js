@@ -18,13 +18,10 @@ class KegControl extends React.Component {
   handleClick = () => {
     if (this.state.selectedKeg != null) {
       this.setState({
-        formVisibleOnPage: false,
-        selectedKeg: null,
+        selectedKeg: null
       });
     } else {
-      this.setState(prevState => ({
-        formVisibleOnPage: !prevState.formVisibleOnPage
-      }));
+
     }
   }
 
@@ -56,7 +53,6 @@ class KegControl extends React.Component {
     const { dispatch } = this.props;
     const action = a.addKeg(newKeg);
     dispatch(action);
-    this.setState({formVisibleOnPage: false});
   }
 
   render() {
