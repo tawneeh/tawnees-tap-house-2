@@ -40,7 +40,7 @@ class KegControl extends React.Component {
         const newKegList = Object.values(this.props.masterKegList[selectedKeg.id])
           .concat(newQuantity);
         this.setState({
-          masterKegList: newKegList,
+          masterKegList: newKegList, // newQuantity not being added to masterKegList because masterKegList is handled by Redux now
           selectedKeg: newQuantity
         });
       }
