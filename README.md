@@ -27,7 +27,7 @@ Setup Instructions
 
 ## 🌳 React Component Tree
 
-<img style="width: 30% height: 30%" src="./read-me-assets/TODO">
+<img style="width: 30% height: 30%" src="./read-me-assets/TapHouseTree.png">
 
 ## 🐜 Known Bugs
 
