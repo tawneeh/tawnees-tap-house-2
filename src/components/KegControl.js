@@ -39,8 +39,8 @@ class KegControl extends React.Component {
       if (selectedKeg.pintsLeft === 0) {
         return;
       } else {
-        const newKegList = this.props.masterKegList[selectedKeg.id]
-          .concat(newQuantity); // concat will not work on Object! try spread ... or Object.assign() ?
+        const newKegList = Object.values(this.props.masterKegList[selectedKeg.id])
+          .concat(newQuantity);
         this.setState({
           masterKegList: newKegList,
           selectedKeg: newQuantity
