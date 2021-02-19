@@ -3,6 +3,21 @@ import * as c from '../../actions/ActionTypes';
 
 describe('kegListReducer', () => {
 
+  const currentState = {
+    1: {name: '10 Below',
+    brand: 'Scuttlebutt Brewing',
+    price: '5',
+    alcoholContent: '7',
+    pintsLeft: '124',
+    id: 1},
+    2: {name: 'Peaches For Me IPA',
+    brand: 'Redhook',
+    price: '7',
+    alcoholContent: '6',
+    pintsLeft: '50',
+    id: 2}
+  }
+
   let action;
   const kegData = {
     name: '10 Below',
@@ -38,6 +53,21 @@ describe('kegListReducer', () => {
         pintsLeft: pintsLeft,
         id: id
       }
+    });
+  });
+
+  test('Should successfully delete a keg', () => {
+    action = {
+      type: c.DELETE_KEG,
+      id: 1
+    };
+    expect(kegListReducer(currentState, action)).toEqual({
+      2: {name: 'Peaches For Me IPA',
+      brand: 'Redhook',
+      price: '7',
+      alcoholContent: '6',
+      pintsLeft: '50',
+      id: 2}
     });
   });
 
